@@ -1,0 +1,397 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: none;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+/* navbar styling */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+   /* background: crimson;*/
+    font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 30px 0;
+    background: rgb(155, 11, 59);
+
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+.navbar .logo a span{
+    color: rgb(174, 175, 175);
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+.navbar .menu li a:hover{
+    color: rgb(4, 33, 192);
+}
+
+/*menu btn styling*/
+.nenu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+}
+/*home section style */
+.home{
+    display: flex;
+    background: url("pexels-oleg-magni-1040499.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text-3 span{
+    color: crimson;
+    font-weight: 500;
+    font-weight: bold;
+}
+.home .home-content a{
+  display:inline-block;
+  background: crimson;
+  color: #fff;
+  font-size: 25px;
+  padding: 12px 36px;
+  margin-top:20px;
+  border-radius: 6px;
+  border: 2px solid crimson;
+  transition: all 0.3s ease-out;
+}
+.home .home-content a:hover{
+    color:#fff;
+    background:none;
+}
+/* about section styling*/
+.about{
+    font-family:'Poppins', sans-serif ;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    font-family:'Ubuntu',sans-serif;
+    font-weight: bold;
+}
+.about .title::before{
+    content:"";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%)
+}
+.about .title::after{
+    content:"Know me";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%)
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.about .about-content .left{
+width: 45%;
+}
+.about .about-content .column-left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.about .about-content .right{
+    width: 55%;
+    }
+ .about .about-content .right .text{
+     font-size: 25px;
+     font-weight: 600;
+     margin-bottom: 10px;
+ }
+ .about .about-content .right .text span{
+     color: crimson;
+ }
+ .about .about-content .right p{
+     text-align: justify;
+ }
+
+ /*contact section styling*/
+ 
+ 
+ /* /* Footer Section Styling* */
+ @import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+ *{
+     padding:0;
+     margin:0;
+ }
+ 
+ html{
+     background-color: #eaf0f2;
+ }
+ 
+ body{
+     font:16px/1.6 Arial,  sans-serif;
+ }
+ 
+ header{
+     text-align: center;
+     padding-top: 100px;
+     margin-bottom:190px;
+ }
+ 
+ header h1{
+     font: normal 32px/1.5 'Open Sans', sans-serif;
+     color: #3F71AE;
+     padding-bottom: 16px;
+ }
+ 
+ header h2{
+     color: #F05283;
+ }
+ 
+ header span{
+     color: #3F71EA;
+ }
+ 
+ 
+ /* The footer is fixed to the bottom of the page */
+ 
+ footer{
+     position: fixed;
+     bottom: 0;
+ }
+ 
+ @media (max-height:800px){
+     footer { position: static; }
+     header { padding-top:40px; }
+ }
+ 
+ 
+ .footer-distributed{
+     background-color: #2c292f;
+     box-sizing: border-box;
+     width: 100%;
+     text-align: left;
+     font: bold 16px sans-serif;
+     padding: 50px 50px 60px 50px;
+     margin-top: 80px;
+ }
+ 
+ .footer-distributed .footer-left,
+ .footer-distributed .footer-center,
+ .footer-distributed .footer-right{
+     display: inline-block;
+     vertical-align: top;
+ }
+ 
+ /* Footer left */
+ 
+ .footer-distributed .footer-left{
+     width: 30%;
+ }
+ 
+ .footer-distributed h3{
+     color:  #ffffff;
+     font: normal 36px 'Cookie', cursive;
+     margin: 0;
+ }
+ 
+ /* The company logo */
+ 
+ .footer-distributed .footer-left img{
+     width: 30%;
+ }
+ 
+ .footer-distributed h3 span{
+     color:  #e0ac1c;
+ }
+ 
+ /* Footer links */
+ 
+ .footer-distributed .footer-links{
+     color:  #ffffff;
+     margin: 20px 0 12px;
+ }
+ 
+ .footer-distributed .footer-links a{
+     display:inline-block;
+     line-height: 1.8;
+     text-decoration: none;
+     color:  inherit;
+ }
+ 
+ .footer-distributed .footer-company-name{
+     color:  #8f9296;
+     font-size: 14px;
+     font-weight: normal;
+     margin: 0;
+ }
+ 
+ /* Footer Center */
+ 
+ .footer-distributed .footer-center{
+     width: 35%;
+ }
+ 
+ 
+ .footer-distributed .footer-center i{
+     background-color:  #33383b;
+     color: #ffffff;
+     font-size: 25px;
+     width: 38px;
+     height: 38px;
+     border-radius: 50%;
+     text-align: center;
+     line-height: 42px;
+     margin: 10px 15px;
+     vertical-align: middle;
+ }
+ 
+ .footer-distributed .footer-center i.fa-envelope{
+     font-size: 17px;
+     line-height: 38px;
+ }
+ 
+ .footer-distributed .footer-center p{
+     display: inline-block;
+     color: #ffffff;
+     vertical-align: middle;
+     margin:0;
+ }
+ 
+ .footer-distributed .footer-center p span{
+     display:block;
+     font-weight: normal;
+     font-size:14px;
+     line-height:2;
+ }
+ 
+ .footer-distributed .footer-center p a{
+     color:  #e0ac1c;
+     text-decoration: none;;
+ }
+ 
+ 
+ /* Footer Right */
+ 
+ .footer-distributed .footer-right{
+     width: 30%;
+ }
+ 
+ .footer-distributed .footer-company-about{
+     line-height: 20px;
+     color:  #92999f;
+     font-size: 13px;
+     font-weight: normal;
+     margin: 0;
+ }
+ 
+ .footer-distributed .footer-company-about span{
+     display: block;
+     color:  #ffffff;
+     font-size: 18px;
+     font-weight: bold;
+     margin-bottom: 20px;
+ }
+ 
+ .footer-distributed .footer-icons{
+     margin-top: 25px;
+ }
+ 
+ .footer-distributed .footer-icons a{
+     display: inline-block;
+     width: 35px;
+     height: 35px;
+     cursor: pointer;
+     background-color:  #33383b;
+     border-radius: 2px;
+ 
+     font-size: 20px;
+     color: #ffffff;
+     text-align: center;
+     line-height: 35px;
+ 
+     margin-right: 3px;
+     margin-bottom: 5px;
+ }
+ 
+ /* Here is the code for Responsive Footer */
+ /* You can remove below code if you don't want Footer to be responsive */
+ 
+ 
+ 
+ @media (max-width: 880px) {
+ 
+     .footer-distributed .footer-left,
+     .footer-distributed .footer-center,
+     .footer-distributed .footer-right{
+         display: block;
+         width: 100%;
+         margin-bottom: 40px;
+         text-align: center;
+     }
+ 
+     .footer-distributed .footer-center i{
+         margin-left: 0;
+     }
+ 
+ }
